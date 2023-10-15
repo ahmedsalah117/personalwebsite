@@ -20,7 +20,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="Logo" className="h-9 w-9 object-contain" />
+          <img src={logo} alt="Logo" className="h-10 w-10 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Ahmed &nbsp; Bahnasy
           </p>
