@@ -37,7 +37,7 @@ import tripguide from "./tripguide.png";
 import admin from "./adminDashboard.png";
 import movies from "./moviesHome.jpg";
 import games from "./game-over-home.jpg";
-import forkify from "./forkify.png";
+import forkify from "./forkify.jpg";
 import mapty from "./mapty.PNG";
 import bankist from "./bankist.png";
 import food from "./food.png";
