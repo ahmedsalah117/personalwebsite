@@ -63,8 +63,6 @@ const Contact = () => {
       });
   }
 
-  //original classes : flex-[0.75] bg-black-100 p-8 rounded-2xl
-
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex  overflow-hidden max-xl:items-center gap-10 xl:justify-between pb-5 xl:pb-0">
       <motion.div
