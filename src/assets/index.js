@@ -37,7 +37,9 @@ import food from "./food.PNG";
 import crud from "./crud.PNG";
 import expenses from "./expenses.PNG";
 import bankistAdvanced from "./bankist-advanced.jpg";
+import DgigiCrafterz from "./company/DC-Logo.JPG";
 export {
+  DgigiCrafterz,
   bankistAdvanced,
   bankist,
   food,

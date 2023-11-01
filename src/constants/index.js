@@ -20,6 +20,7 @@ import {
   carrent,
   threejs,
   terminalback,
+  DgigiCrafterz,
   terminal,
   route,
   altice,
@@ -141,15 +142,26 @@ const technologies = [
 const experiences = [
   {
     title: "Front-End Developer",
+    company_name: "DigiCrafterz",
+    icon: DgigiCrafterz,
+    iconBg: "#383E56",
+    date: "Present",
+    points: [
+      "Developing and maintaining web and mobile applications using React, Next.js, React Native Electron.js, and Tailwind CSS.",
+      " Playing a key role in cross-platform application development, leveraging React Native and Electron.js to reach a broader audience with consistent user experience.",
+      " Collaborating with the design and product teams to create visually appealing and user-friendly interfaces that meet project requirements and goals.",
+    ],
+  },
+  {
+    title: "Front-End Developer",
     company_name: "Terminal",
     icon: terminal,
     iconBg: "#383E56",
-    date: "Present",
+    date: "Jan 2023 - Nov 2023",
     points: [
       "Developing and maintaining web applications using NextJS, React, React Native, Electron JS and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
