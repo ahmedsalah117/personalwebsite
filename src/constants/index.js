@@ -145,7 +145,7 @@ const experiences = [
     company_name: "DigiCrafterz",
     icon: DgigiCrafterz,
     iconBg: "#383E56",
-    date: "Present",
+    date: "Nov 2023 - Present",
     points: [
       "Developing and maintaining web and mobile applications using React, Next.js, React Native Electron.js, and Tailwind CSS.",
       " Playing a key role in cross-platform application development, leveraging React Native and Electron.js to reach a broader audience with consistent user experience.",
