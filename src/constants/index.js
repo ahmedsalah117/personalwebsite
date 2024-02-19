@@ -316,8 +316,8 @@ const projects = [
       },
     ],
     image: food,
-    source_code_link: "https://github.com/ahmedsalah117/Expenses-Tracker",
-    preview_link: "https://ahmedsalah117.github.io/Expenses-Tracker/",
+    source_code_link: "https://github.com/ahmedsalah117/food-order-application",
+    preview_link: "https://ahmedsalah117.github.io/food-order-application/",
   },
   {
     name: "Forkify",
