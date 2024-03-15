@@ -1,4 +1,8 @@
 import {
+  figma1,
+  figma2,
+  figma3,
+  figma4,
   forkify,
   admin,
   mobile,
@@ -147,8 +151,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "Nov 2023 - Present",
     points: [
-      "Developing and maintaining web and mobile applications using React, Next.js, React Native Electron.js, and Tailwind CSS.",
-      " Playing a key role in cross-platform application development, leveraging React Native and Electron.js to reach a broader audience with consistent user experience.",
+      "Developing and maintaining web and desktop applications using React, Next.js,and Electron.js.",
+      " Playing a key role in cross-platform application development, leveraging Electron.js to reach a broader audience with consistent user experience.",
       " Collaborating with the design and product teams to create visually appealing and user-friendly interfaces that meet project requirements and goals.",
     ],
   },
@@ -159,7 +163,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2023 - Nov 2023",
     points: [
-      "Developing and maintaining web applications using NextJS, React, React Native, Electron JS and other related technologies.",
+      "Developing and maintaining web applications using NextJS, React, and Electron JS and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
@@ -210,6 +214,29 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Figma clone",
+    description: [
+      "• A minimalistic Figma clone to show how to add real-world features like live collaboration with cursor chat, comments, reactions, and drawing designs (shapes, image upload) on the canvas using fabric.js.",
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Liveblocks",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Fabric js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: figma4,
+    source_code_link: "https://github.com/ahmedsalah117/figma_clone",
+    preview_link: "https://figma-clone-delta.vercel.app/",
+  },
   {
     name: "Admin Dashboard",
     description: [

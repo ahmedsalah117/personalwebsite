@@ -38,7 +38,15 @@ import crud from "./crud.PNG";
 import expenses from "./expenses.PNG";
 import bankistAdvanced from "./bankist-advanced.jpg";
 import DgigiCrafterz from "./company/DC-Logo.JPG";
+import figma1 from "./Figma_clone_pic_1.JPG";
+import figma2 from "./Figma_clone_pic_2.JPG";
+import figma3 from "./Figma_clone_pic_3.JPG";
+import figma4 from "./Figma_clone_pic_4.JPG";
 export {
+  figma1,
+  figma2,
+  figma3,
+  figma4,
   DgigiCrafterz,
   bankistAdvanced,
   bankist,
