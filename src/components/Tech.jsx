@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion.js";
 const Tech = () => {
   return (
-    <div className="flex flex-row justify-center flex-wrap gap-12 pb-10">
+    <div className="flex flex-row justify-center flex-wrap gap-12 pb-12">
       {technologies.map((item, index) => {
         {
           /* <div className="w-28 h-28" key={item.name}>
