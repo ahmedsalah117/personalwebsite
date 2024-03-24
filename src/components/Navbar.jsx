@@ -69,6 +69,15 @@ const Navbar = () => {
           }
         }
       });
+
+      //removing the active link class from all of the nav links when the user is scrolled to 0,0
+      if (window.scrollY === 0) {
+        Array.from(document.querySelectorAll(".active-link")).forEach(
+          (link) => {
+            link.classList.remove("active-link");
+          }
+        );
+      }
     });
   }
 

@@ -19,7 +19,7 @@ function App() {
         <div className=" bg-center bg-no-repeat bg-cover relative">
           <Navbar />
           <Hero />
-          <StarsCanvas />
+          <StarsCanvas count={4000} shape={"sphere"} />
         </div>
         <About />
         <Experience />
@@ -34,7 +34,7 @@ function App() {
         />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          <StarsCanvas count={1000} shape={"box"} />
         </div>
       </div>
     </BrowserRouter>

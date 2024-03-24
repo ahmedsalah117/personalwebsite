@@ -99,13 +99,13 @@ const CustomGeometryParticles = (props) => {
     </points>
   );
 };
-function StarsCanvas() {
+function StarsCanvas({ shape, count }) {
   return (
     <div className="w-full h-auto inset-0 absolute z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={<CanvasLoader />}>
           {/* <Stars /> */}
-          <CustomGeometryParticles count={4000} shape={"box"} />
+          <CustomGeometryParticles count={count} shape={shape} />
         </Suspense>
         <Preload all />
       </Canvas>
