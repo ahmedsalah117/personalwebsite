@@ -2,7 +2,18 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import ComputersCanvas from "./canvas/Computers.jsx";
 import { ReactTyped } from "react-typed";
+import { useEffect, useState } from "react";
 const Hero = () => {
+  const [windowHeight, setWindowHeight] = useState(null);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setWindowHeight(window.innerHeight);
+    });
+
+    return window.removeEventListener("resize", () => {
+      setWindowHeight(window.innerHeight);
+    });
+  }, []);
   return (
     <section className="w-full relative min-h-screen mx-auto overflow-y-auto">
       {/* Headers container */}
@@ -24,7 +35,11 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="w-full text-center absolute mt-8 top-[50%] left-0">
+        <div
+          className={`w-full text-center absolute mt-8 top-[50%] left-0 ${
+            windowHeight && windowHeight < 470 && "hidden"
+          }`}
+        >
           <ReactTyped
             backSpeed={40}
             typeSpeed={40}
@@ -42,7 +57,11 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className="z-50 w-fit left-[50%] translate-x-[-50%] absolute bottom-0  flex justify-center items-center">
+      <div
+        className={`z-50 w-fit left-[50%] translate-x-[-50%] absolute bottom-0  flex justify-center items-center ${
+          windowHeight && windowHeight < 470 && "hidden"
+        }`}
+      >
         <a href="#overview" className="block w-fit h-full">
           <div className=" w-[35px] h-[64px] rounded-3xl  border-4 border-secondary flex justify-center items-start ">
             <motion.div
