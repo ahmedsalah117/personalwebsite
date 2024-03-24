@@ -2,42 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import ComputersCanvas from "./canvas/Computers.jsx";
 import { ReactTyped } from "react-typed";
-import { Typing, TypingStep } from "typing-effect-reactjs";
 const Hero = () => {
-  const sequence = [
-    {
-      content: "#include<iostream>\n\n",
-    },
-    {
-      content: "using namespace std;\n",
-    },
-    {
-      content: "int main() {\n",
-    },
-    {
-      content: 'cout << "Hello World";\n',
-    },
-    {
-      content: "return 0;\n",
-    },
-    {
-      content: "}",
-    },
-  ];
-  const editorStyle = {
-    margin: "auto",
-    width: "50%",
-    height: "300px",
-    // border: "1px solid #ccc",
-    borderRadius: "5px",
-    boxShadow: "0 12px 4px rgba(0,0,0,0.1)",
-    padding: "20px",
-    fontFamily: "Arial, sans-serif",
-    fontSize: "16px",
-    lineHeight: "1.5",
-    color: "#fff",
-    // backgroundColor: "#23272E",
-  };
   return (
     <section className="w-full relative h-screen mx-auto">
       {/* Headers container */}
@@ -79,14 +44,6 @@ const Hero = () => {
               backDelay={2000}
               loop
               className={`${styles.heroSubText} mt-2  text-white-100`}
-              // strings={[" Crafting Digital Experience. Designing Tomorrow 💪"]}
-              // strings={["console.log('Welcome to my website!')"]}
-              // strings={[
-              //   "const createApp = () => { return <App />; }",
-              //   "let's debug with console.log('Hello, bugs!');",
-              //   "document.getElementById('root').innerHTML = 'Welcome!';",
-              //   "React.useState('Innovate. Create. Iterate.')",
-              // ]}
               strings={[
                 "fetch('/api/ideas').then(response => response.json());",
                 "Promise.resolve('Delivering quality code').catch(e => console.error(e));",
@@ -95,20 +52,6 @@ const Hero = () => {
               ]}
             />
           </div>
-          <div style={editorStyle}>
-            {/* <TypingStep
-              Infinity
-              loop
-              sequence={sequence}
-              element="p"
-              typeSpeed={95}
-              styleClass="code"
-            /> */}
-          </div>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Software Developer | Mastering NextJS, React and React Native for
-            Next-Level Applications
-          </p> */}
         </div>
       </div>
 
@@ -117,9 +60,6 @@ const Hero = () => {
         <a href="#overview" className="block w-fit h-full">
           <div className=" w-[35px] h-[64px] rounded-3xl  border-4 border-secondary flex justify-center items-start ">
             <motion.div
-              onClick={() => {
-                console.log("clicked");
-              }}
               animate={{
                 y: [0, 24, 0],
               }}
