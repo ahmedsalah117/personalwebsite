@@ -41,14 +41,14 @@ const Hero = () => {
             <ReactTyped
               backSpeed={40}
               typeSpeed={40}
-              backDelay={2000}
+              backDelay={3000}
               loop
-              className={`${styles.heroSubText} mt-2  text-white-100`}
+              className={`${styles.heroSubText} mt-2  text-white-100 text-break`}
               strings={[
                 "fetch('/api/ideas').then(response => response.json());",
                 "Promise.resolve('Delivering quality code').catch(e => console.error(e));",
                 "localStorage.setItem('creativity', 'unlimited');",
-                "document.querySelector('.future').classList.add('bright');",
+                "document.querySelector('.future' ).classList.add('bright');",
               ]}
             />
           </div>

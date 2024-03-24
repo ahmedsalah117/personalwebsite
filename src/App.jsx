@@ -15,7 +15,7 @@ import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary overflow-x-hidden">
         <div className=" bg-center bg-no-repeat bg-cover relative">
           <Navbar />
           <Hero />
