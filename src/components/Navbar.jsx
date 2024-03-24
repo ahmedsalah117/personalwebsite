@@ -7,9 +7,77 @@ import { logo, menu, close } from "../assets/index.js";
 const Navbar = () => {
   const [active, setActive] = useState("second");
   const [toggle, setToggle] = useState(false);
+
+  // Closing the mobile nav menu if the user clicks on the any part of the page.
+  useEffect(() => {
+    document.addEventListener("click", () => {
+      setToggle(false);
+    });
+
+    return document.removeEventListener("click", () => {
+      setToggle(false);
+    });
+  }, []);
+
+  function activeLinkHandler() {
+    const allSecs = document.querySelectorAll(".section");
+
+    const secTops = Array.from(allSecs).map((sec) => {
+      return sec.getBoundingClientRect().top;
+    });
+
+    window.addEventListener("scroll", (e) => {
+      secTops.forEach((secTop, index) => {
+        if (window.scrollY > secTop) {
+          const allLinks = document.querySelectorAll("ul li");
+          allLinks.forEach((link) => {
+            return link.classList.remove("active-link");
+          });
+          switch (index) {
+            case 0:
+              document
+                .querySelector("#overviewOverview")
+                .classList.add("active-link");
+              document
+                .querySelector("#overviewOverviewMob")
+                .classList.add("active-link");
+              break;
+            case 1:
+              document
+                .querySelector("#experienceExperience")
+                .classList.add("active-link");
+              document
+                .querySelector("#experienceExperienceMob")
+                .classList.add("active-link");
+              break;
+            case 2:
+              document
+                .querySelector("#projectsProjects")
+                .classList.add("active-link");
+              document
+                .querySelector("#projectsProjectsMob")
+                .classList.add("active-link");
+              break;
+            case 3:
+              document
+                .querySelector("#contactContact")
+                .classList.add("active-link");
+              document
+                .querySelector("#contactContactMob")
+                .classList.add("active-link");
+              break;
+          }
+        }
+      });
+    });
+  }
+
+  useEffect(() => {
+    activeLinkHandler();
+  }, []);
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-[100] bg-primary`}
     >
       <div className="flex items-center justify-between max-w-7xl w-full mx-auto">
         <Link
@@ -22,18 +90,17 @@ const Navbar = () => {
         >
           <img src={logo} alt="Logo" className="h-10 w-10 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Ahmed &nbsp; Bahnasy
+            hmed &nbsp; Bahnasy
           </p>
         </Link>
         <ul className="list-none md:flex flex-row hidden gap-10">
           {navLinks.map((link) => {
             return (
               <li
-                key={link.id}
+                id={`${link.id}${link.title}`}
+                key={link.id + Math.random() * 100}
                 className={`${
-                  active === link.title
-                    ? "text-white bg-[#A020F0] px-3 py-1 rounded-md"
-                    : "text-secondary"
+                  active === link.title ? "active-link" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer duration-300`}
                 onClick={() => setActive(link.title)}
               >
@@ -42,12 +109,15 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <div className="flex flex-1 md:hidden justify-end items-center">
+        <div className="flex flex-1 md:hidden relative z-[100] justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle((prev) => !prev)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setToggle((prev) => !prev);
+            }}
           />
           <div
             className={`${
@@ -58,10 +128,11 @@ const Navbar = () => {
               {navLinks.map((link) => {
                 return (
                   <li
-                    key={link.id}
+                    id={link.id + link.title + "Mob"}
+                    key={link.id + Math.random() * 1000}
                     className={`${
-                      active === link.title ? "text-white" : "text-secondary"
-                    } hover:text-white text-[18px] font-poppins font-medium cursor-pointer`}
+                      active === link.title ? "active-link" : "text-secondary"
+                    } hover:text-white text-[18px] font-poppins font-medium cursor-pointer duration-200`}
                     onClick={() => {
                       setActive(link.title);
                       setToggle(false);

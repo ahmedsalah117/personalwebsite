@@ -42,10 +42,9 @@ import figma1 from "./Figma_clone_pic_1.JPG";
 import figma2 from "./Figma_clone_pic_2.JPG";
 import figma3 from "./Figma_clone_pic_3.JPG";
 import figma4 from "./Figma_clone_pic_4.JPG";
+import cSharp from "./tech/c-sharp.png";
 export {
-  figma1,
-  figma2,
-  figma3,
+  cSharp,
   figma4,
   DgigiCrafterz,
   bankistAdvanced,

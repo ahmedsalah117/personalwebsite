@@ -1,7 +1,4 @@
 import {
-  figma1,
-  figma2,
-  figma3,
   figma4,
   forkify,
   admin,
@@ -39,6 +36,7 @@ import {
   crud,
   expenses,
   bankistAdvanced,
+  cSharp,
 } from "../assets";
 
 export const navLinks = [
@@ -125,14 +123,14 @@ const technologies = [
     name: "Electron JS",
     icon: electron,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
-  // {
-  //   name: "git",
-  //   icon: git,
-  // },
+  {
+    name: "C#",
+    icon: cSharp,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
   {
     name: "figma",
     icon: figma,

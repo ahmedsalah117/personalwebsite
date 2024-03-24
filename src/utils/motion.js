@@ -1,5 +1,4 @@
 export const textVariant = (delay) => {
-  console.log("textVariant executed");
   return {
     hidden: {
       y: -50,

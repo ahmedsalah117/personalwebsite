@@ -60,15 +60,18 @@ function ProjectCard({
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
             <p className="mt-2 text-secondary text-[14px]">
               {description.map((item) => (
-                <p className="mt-2" key={item}>
+                <span className="mt-2 block" key={item}>
                   {item}
-                </p>
+                </span>
               ))}
             </p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            {tags.map((tag, index) => (
+              <p
+                key={tag.name + index * Math.random() * 1000}
+                className={`text-[14px] ${tag.color}`}
+              >
                 #{tag.name}
               </p>
             ))}
@@ -81,7 +84,7 @@ function ProjectCard({
 
 const Works = () => {
   return (
-    <>
+    <section className="section">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>my work</p>
         <h2 className={styles.sectionHeadText}>projects.</h2>
@@ -103,7 +106,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} {...project} />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 
