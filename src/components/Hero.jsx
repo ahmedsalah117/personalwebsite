@@ -4,17 +4,17 @@ import ComputersCanvas from "./canvas/Computers.jsx";
 import { ReactTyped } from "react-typed";
 const Hero = () => {
   return (
-    <section className="w-full relative h-screen mx-auto">
+    <section className="w-full relative min-h-screen mx-auto overflow-y-auto">
       {/* Headers container */}
       <div
-        className={` ${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 `}
+        className={` ${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-
-        <div className="">
+        {/*hero section header  */}
+        <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I&apos;m <span className="text-[#915EFF]">Ahmed Bahnasy</span>
           </h1>
@@ -22,41 +22,27 @@ const Hero = () => {
             Software Developer | Mastering NextJS, React and React Native for
             Next-Level Applications
           </p>
+        </div>
 
-          <div
-          // className="translate-y-[150px]"
-          >
-            {/* <ReactTyped
-              backSpeed={40}
-              typeSpeed={40}
-              backDelay={2000}
-              loop
-              className={`${styles.heroSubText} mt-2  text-white-100`}
-              strings={[
-                " Software Developer | Mastering NextJS, React and React Native for Next-Level Applications",
-              ]}
-            /> */}
-          </div>
-          <div className="translate-y-[100px] text-center">
-            <ReactTyped
-              backSpeed={40}
-              typeSpeed={40}
-              backDelay={3000}
-              loop
-              className={`${styles.heroSubText} mt-2  text-white-100 text-break`}
-              strings={[
-                "fetch('/api/ideas').then(response => response.json());",
-                "Promise.resolve('Delivering quality code').catch(e => console.error(e));",
-                "localStorage.setItem('creativity', 'unlimited');",
-                "document.querySelector('.future' ).classList.add('bright');",
-              ]}
-            />
-          </div>
+        <div className="w-full text-center absolute mt-8 top-[50%] left-0">
+          <ReactTyped
+            backSpeed={40}
+            typeSpeed={40}
+            backDelay={3000}
+            loop
+            className={`${styles.heroSubText} mt-2  text-white-100 text-break`}
+            strings={[
+              "fetch('/api/ideas').then(response => response.json());",
+              "Promise.resolve('Delivering quality code').catch(e => console.error(e));",
+              "localStorage.setItem('creativity', 'unlimited');",
+              "document.querySelector('.future' ).classList.add('bright');",
+            ]}
+          />
         </div>
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className="z-50 w-fit left-[50%] translate-x-[-50%] absolute xs:bottom-0 bottom-32 flex justify-center items-center">
+      <div className="z-50 w-fit left-[50%] translate-x-[-50%] absolute bottom-0  flex justify-center items-center">
         <a href="#overview" className="block w-fit h-full">
           <div className=" w-[35px] h-[64px] rounded-3xl  border-4 border-secondary flex justify-center items-start ">
             <motion.div
