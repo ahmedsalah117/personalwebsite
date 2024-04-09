@@ -15,6 +15,7 @@ function ProjectCard({
   image,
   source_code_link,
   preview_link,
+  showLinks,
 }) {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -31,29 +32,33 @@ function ProjectCard({
             />
 
             <div className="w-full flex absolute inset-0 p-3 justify-between gap-3 items-end  card-img_hover flex-col ">
-              <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full justify-center items-center flex cursor-pointer hover:scale-125 duration-200"
-              >
-                <img
-                  src={github}
-                  alt="github"
-                  className="w-1/2 h-1/2 object-contain"
-                />
-              </div>
-              <div
-                onClick={() => window.open(preview_link, "_blank")}
-                className=" bg-tertiary w-10 h-10 rounded-full justify-center items-center flex cursor-pointer  hover:scale-125 duration-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="2em"
-                  viewBox="0 0 512 512"
-                  fill="#fff"
+              {showLinks && (
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full justify-center items-center flex cursor-pointer hover:scale-125 duration-200"
                 >
-                  <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
-                </svg>
-              </div>
+                  <img
+                    src={github}
+                    alt="github"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
+              )}
+              {showLinks && (
+                <div
+                  onClick={() => window.open(preview_link, "_blank")}
+                  className=" bg-tertiary w-10 h-10 rounded-full justify-center items-center flex cursor-pointer  hover:scale-125 duration-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2em"
+                    viewBox="0 0 512 512"
+                    fill="#fff"
+                  >
+                    <path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
+                  </svg>
+                </div>
+              )}
             </div>
           </div>
           <div className="mt-5">

@@ -38,12 +38,17 @@ import crud from "./crud.PNG";
 import expenses from "./expenses.PNG";
 import bankistAdvanced from "./bankist-advanced.jpg";
 import DgigiCrafterz from "./company/DC-Logo.JPG";
-import figma1 from "./Figma_clone_pic_1.JPG";
-import figma2 from "./Figma_clone_pic_2.JPG";
-import figma3 from "./Figma_clone_pic_3.JPG";
 import figma4 from "./Figma_clone_pic_4.JPG";
 import cSharp from "./tech/c-sharp.png";
+import apaDoc from "./apa_doc_dashboard.JPG";
+import apaPatient from "./apa_patient_appointments.JPG";
+import apaAdmin from "./apa_admin_patients.JPG";
+import shippingify from "./shippingify_profits.JPG";
 export {
+  shippingify,
+  apaAdmin,
+  apaPatient,
+  apaDoc,
   cSharp,
   figma4,
   DgigiCrafterz,

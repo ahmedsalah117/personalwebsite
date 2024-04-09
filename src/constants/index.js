@@ -1,4 +1,8 @@
 import {
+  shippingify,
+  apaAdmin,
+  apaPatient,
+  apaDoc,
   figma4,
   forkify,
   admin,
@@ -213,6 +217,103 @@ const experiences = [
 
 const projects = [
   {
+    name: "Shippingify Admin",
+    description: [
+      `• Shippingify Admin is a robust shipping management system developed by the talented team at DigiCrafterz, designed to streamline operations for shipping companies of all sizes. As a front-end developer at DigiCrafterz, I played a key role in developing the user interface and collaborating with back-end developers to integrate APIs, ensuring a seamless and efficient user experience.`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React TS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shippingify,
+    source_code_link: "",
+    preview_link: "",
+    showLinks: false,
+  },
+  {
+    name: "APA Doctor",
+    description: [
+      "• APA Doctor is a cutting-edge medical practice management application developed by the talented team at DigiCrafterz in collaboration with AdvancedMD, a leading provider of cloud-based healthcare technology solutions. Tailored specifically for American doctors, APA Doctor offers a robust suite of features to empower doctors in efficiently managing their practice.",
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Electron JS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: apaDoc,
+    source_code_link: "",
+    preview_link: "",
+    showLinks: false,
+  },
+  {
+    name: "APA Patient",
+    description: [
+      `• APA Patient is an innovative desktop application developed by the talented team at DigiCrafterz in collaboration with AdvancedMD, a leading provider of cloud-based healthcare technology solutions. Serving as the patient counterpart to the "APA Doctor" application, APA Patient empowers individuals to take control of their healthcare journey with a comprehensive suite of features.`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Electron JS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: apaPatient,
+    source_code_link: "",
+    preview_link: "",
+    showLinks: false,
+  },
+  {
+    name: "APA Admin",
+    description: [
+      `• APA Admin is a sophisticated clinic management and analytics application developed by the skilled team at DigiCrafterz in collaboration with AdvancedMD, a leading provider of cloud-based healthcare technology solutions. Tailored for doctors who own clinics or medical practices, APA Admin serves as a comprehensive tool for managing operations, overseeing staff, and gaining valuable insights into clinic performance.`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React TS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: apaAdmin,
+    source_code_link: "",
+    preview_link: "",
+    showLinks: false,
+  },
+
+  {
     name: "Figma clone",
     description: [
       "• A minimalistic Figma clone to show how to add real-world features like live collaboration with cursor chat, comments, reactions, and drawing designs (shapes, image upload) on the canvas using fabric.js.",
@@ -234,6 +335,7 @@ const projects = [
     image: figma4,
     source_code_link: "https://github.com/ahmedsalah117/figma_clone",
     preview_link: "https://figma-clone-delta.vercel.app/",
+    showLinks: true,
   },
   {
     name: "Admin Dashboard",
@@ -259,6 +361,7 @@ const projects = [
     source_code_link:
       "https://github.com/ahmedsalah117/admin-dashboard/tree/master",
     preview_link: "https://ahmedsalah117.github.io/admin-dashboard/",
+    showLinks: true,
   },
   {
     name: "The Movies App",
@@ -290,6 +393,7 @@ const projects = [
     image: movies,
     source_code_link: "https://github.com/ahmedsalah117/The-movies-app",
     preview_link: "https://ahmedsalah117.github.io/The-movies-app/",
+    showLinks: true,
   },
   {
     name: "Game Over",
@@ -319,8 +423,32 @@ const projects = [
     image: games,
     source_code_link: "https://github.com/ahmedsalah117/game-over",
     preview_link: "https://ahmedsalah117.github.io/game-over/",
+    showLinks: true,
   },
-
+  {
+    name: "Mapty",
+    description: [
+      "• This app allows users to track their running and cycling activities using the Leaflet library to display a map and the geolocation API to determine the user's coordinates and display them on the map.",
+    ],
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LeafLet",
+        color: "green-text-gradient",
+      },
+      {
+        name: "maps",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mapty,
+    source_code_link: "https://github.com/ahmedsalah117/Mapty-app",
+    preview_link: "https://ahmedsalah117.github.io/Mapty-app/",
+    showLinks: true,
+  },
   {
     name: "Food Order App",
     description: [
@@ -343,6 +471,7 @@ const projects = [
     image: food,
     source_code_link: "https://github.com/ahmedsalah117/food-order-application",
     preview_link: "https://ahmedsalah117.github.io/food-order-application/",
+    showLinks: true,
   },
   {
     name: "Forkify",
@@ -367,29 +496,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/forkify-app",
     preview_link:
       "https://6483915c30c84a1898e3cfe9--forkify-ahmed-bahnasy.netlify.app/",
-  },
-  {
-    name: "Mapty",
-    description: [
-      "• This app allows users to track their running and cycling activities using the Leaflet library to display a map and the geolocation API to determine the user's coordinates and display them on the map.",
-    ],
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "LeafLet",
-        color: "green-text-gradient",
-      },
-      {
-        name: "maps",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: mapty,
-    source_code_link: "https://github.com/ahmedsalah117/Mapty-app",
-    preview_link: "https://ahmedsalah117.github.io/Mapty-app/",
+    showLinks: true,
   },
 
   {
@@ -415,6 +522,7 @@ const projects = [
     image: bankistAdvanced,
     source_code_link: "https://github.com/ahmedsalah117/bankist-advanced",
     preview_link: "https://ahmedsalah117.github.io/bankist-advanced/",
+    showLinks: true,
   },
 
   {
@@ -440,6 +548,7 @@ const projects = [
     image: bankist,
     source_code_link: "https://github.com/ahmedsalah117/Bankist-app",
     preview_link: "https://ahmedsalah117.github.io/Bankist-app/",
+    showLinks: true,
   },
   {
     name: "Expenses Calculator",
@@ -463,6 +572,7 @@ const projects = [
     image: expenses,
     source_code_link: "https://github.com/ahmedsalah117/Expenses-Tracker",
     preview_link: "https://ahmedsalah117.github.io/Expenses-Tracker/",
+    showLinks: true,
   },
   {
     name: "CRUD Table",
@@ -489,6 +599,7 @@ const projects = [
     image: crud,
     source_code_link: "https://github.com/ahmedsalah117/CRUD-System",
     preview_link: "https://ahmedsalah117.github.io/CRUD-System/",
+    showLinks: true,
   },
 ];
 
