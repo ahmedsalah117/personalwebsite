@@ -44,7 +44,9 @@ import apaDoc from "./apa_doc_dashboard.JPG";
 import apaPatient from "./apa_patient_appointments.JPG";
 import apaAdmin from "./apa_admin_patients.JPG";
 import shippingify from "./shippingify_profits.JPG";
+import linkSharing from "./link_sharing.JPG";
 export {
+  linkSharing,
   shippingify,
   apaAdmin,
   apaPatient,

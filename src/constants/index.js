@@ -41,6 +41,7 @@ import {
   expenses,
   bankistAdvanced,
   cSharp,
+  linkSharing,
 } from "../assets";
 
 export const navLinks = [
@@ -151,7 +152,7 @@ const experiences = [
     company_name: "DigiCrafterz",
     icon: DgigiCrafterz,
     iconBg: "#383E56",
-    date: "Jan 2023 - Present",
+    date: "Nov 2023 - Present",
     points: [
       "Developing and maintaining web and desktop applications using React, Next.js,and Electron.js.",
       " Playing a key role in cross-platform application development, leveraging Electron.js to reach a broader audience with consistent user experience.",
@@ -163,32 +164,32 @@ const experiences = [
     company_name: "Terminal",
     icon: terminal,
     iconBg: "#383E56",
-    date: "Jul 2022 - Dec 2022",
+    date: "Jan 2023 - Dec 2023",
     points: [
       "Developing and maintaining web applications using NextJS, React, and Electron JS and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
-  // {
-  //   title: "Front End Web Developer Trainee",
-  //   company_name: "Route Academy",
-  //   icon: route,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jul 2022 - Dec 2022",
-  //   points: [
-  //     "Acquired strong foundations in computer science fundamentals, including Object-Oriented Programming (OOP), Data Structures, and Algorithms, using C++",
-  //     "Developed proficiency in a wide range of web development technologies, including HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, jQuery, React JS, Redux, Git, and GitHub",
-  //     "Participated in hands-on projects and exercises, applying learned concepts to real-world scenarios and enhancing problem-solving skills",
-  //     "Showcased proficiency in React JS by developing projects that leveraged its component-based architecture and state management capabilities",
-  //   ],
-  // },
+  {
+    title: "Front End Web Developer Trainee",
+    company_name: "Route Academy",
+    icon: route,
+    iconBg: "#E6DEDD",
+    date: "Jul 2022 - Dec 2022",
+    points: [
+      "Acquired strong foundations in computer science fundamentals, including Object-Oriented Programming (OOP), Data Structures, and Algorithms, using C++",
+      "Developed proficiency in a wide range of web development technologies, including HTML, CSS, Sass, Bootstrap, JavaScript, TypeScript, jQuery, React JS, Redux, Git, and GitHub",
+      "Participated in hands-on projects and exercises, applying learned concepts to real-world scenarios and enhancing problem-solving skills",
+      "Showcased proficiency in React JS by developing projects that leveraged its component-based architecture and state management capabilities",
+    ],
+  },
   {
     title: "Senior Business Technical Support & Billing Agent",
     company_name: "Altice USA",
     icon: altice,
     iconBg: "#383E56",
-    date: "Apr 2022 - Jul 2022",
+    date: "Apr 2022 - Dec 2022",
     points: [
       " Represented the First-level of Business customer troubleshooting to Altice business customers, over the phone",
     ],
@@ -335,6 +336,31 @@ const projects = [
     image: figma4,
     source_code_link: "https://github.com/ahmedsalah117/figma_clone",
     preview_link: "https://figma-clone-delta.vercel.app/",
+    showLinks: true,
+  },
+  {
+    name: "Link Sharing App",
+    description: [
+      `• This is a minimalistic Link Sharing App. Developed as part of a Front-end coding challenge during a hiring process with a potential employer.`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: linkSharing,
+    source_code_link:
+      "https://github.com/ahmedsalah117/link_sharing_app/tree/master",
+    preview_link: "https://link-sharing-app-three-sigma.vercel.app/",
     showLinks: true,
   },
   {
