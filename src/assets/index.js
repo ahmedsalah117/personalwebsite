@@ -46,7 +46,19 @@ import apaAdmin from "./apa_admin_patients.JPG";
 import shippingify from "./shippingify_profits.JPG";
 import linkSharing from "./link_sharing.JPG";
 import ShippingUnassigned from "./Shipping_unassigned_orders.JPG";
+import ICloudReady from "./company/icloud_ready_logo.JPG";
+import Boost from "./company/boost_logo.JPG";
+import OpportunitiesControl from "./opportunities_control.png";
+import LeadsBulkAction from "./leads_bulk_action.webp";
+import EmployeeExperience from "./employee_experience.png";
+import CFR from "./CFR.png";
 export {
+  EmployeeExperience,
+  CFR,
+  OpportunitiesControl,
+  LeadsBulkAction,
+  ICloudReady,
+  Boost,
   ShippingUnassigned,
   linkSharing,
   shippingify,

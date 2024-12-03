@@ -16,6 +16,8 @@ function ProjectCard({
   source_code_link,
   preview_link,
   showLinks,
+  showGithubLink,
+  showPreviewLink,
 }) {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -32,7 +34,7 @@ function ProjectCard({
             />
 
             <div className="w-full flex absolute inset-0 p-3 justify-between gap-3 items-end  card-img_hover flex-col ">
-              {showLinks && (
+              {showGithubLink && (
                 <div
                   onClick={() => window.open(source_code_link, "_blank")}
                   className="black-gradient w-10 h-10 rounded-full justify-center items-center flex cursor-pointer hover:scale-125 duration-200"

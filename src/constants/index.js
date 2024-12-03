@@ -43,6 +43,12 @@ import {
   bankistAdvanced,
   cSharp,
   linkSharing,
+  ICloudReady,
+  Boost,
+  OpportunitiesControl,
+  LeadsBulkAction,
+  EmployeeExperience,
+  CFR,
 } from "../assets";
 
 export const navLinks = [
@@ -149,6 +155,29 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Front-End Engineer",
+    company_name: "iCloud-Ready",
+    icon: ICloudReady,
+    iconBg: "#383E56",
+    date: "Sept 2024 - Present",
+    points: [
+      "Developing and maintaining web applications using React, Next.js, and Gatsby.",
+      "Playing a key role in supporting & developing the iCloud-Ready CRM & iLpApps productivity app.",
+      "Collaborating with the design and product teams to create visually appealing and user-friendly interfaces that meet project requirements and goals.",
+    ],
+  },
+  {
+    title: "Front-End Engineer",
+    company_name: "Boost Training & Consulting",
+    icon: Boost,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Dec 2024",
+    points: [
+      "Developing and maintaining the company's official website.",
+      "Collaborating with the design and product teams to create new visually appealing and user-friendly web applications that meet project requirements and goals.",
+    ],
+  },
+  {
     title: "Front-End Developer",
     company_name: "DigiCrafterz",
     icon: DgigiCrafterz,
@@ -219,6 +248,59 @@ const experiences = [
 
 const projects = [
   {
+    name: "iCloud-Ready CRM",
+    description: [
+      `• iCloud-Ready CRM is a cutting-edge platform tailored for real estate professionals to enhance efficiency, improve lead management, and drive sales growth`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: OpportunitiesControl,
+    source_code_link: "",
+    preview_link: "https://www.icloud-ready.com/real-estate-crm",
+    showLinks: true,
+    showGithubLink: false,
+    showPreviewLink: true,
+  },
+  {
+    name: "IlpApps OKR",
+    description: [
+      `• A robust and unified management platform designed to streamline business operations, enhance productivity, and foster employee engagement.`,
+      `• This platform serves as a complete business command center, integrating critical tools to help organizations align their goals, strategies, and day-to-day tasks seamlessly.`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: CFR,
+    source_code_link: "",
+    preview_link: "https://www.ilpapps.com/",
+    showLinks: true,
+    showGithubLink: false,
+    showPreviewLink: true,
+  },
+  {
     name: "Shippingify Admin",
     description: [
       `• Shippingify Admin is a robust shipping management system developed by the talented team at DigiCrafterz, designed to streamline operations for shipping companies of all sizes. As a front-end developer at DigiCrafterz, I played a key role in developing the user interface and collaborating with back-end developers to integrate APIs, ensuring a seamless and efficient user experience.`,
@@ -241,6 +323,7 @@ const projects = [
     source_code_link: "",
     preview_link: "",
     showLinks: false,
+    showGithubLink: false,
   },
   {
     name: "APA Doctor",
@@ -265,6 +348,7 @@ const projects = [
     source_code_link: "",
     preview_link: "",
     showLinks: false,
+    showGithubLink: false,
   },
   {
     name: "APA Patient",
@@ -289,6 +373,7 @@ const projects = [
     source_code_link: "",
     preview_link: "",
     showLinks: false,
+    showGithubLink: false,
   },
   {
     name: "APA Admin",
@@ -313,6 +398,7 @@ const projects = [
     source_code_link: "",
     preview_link: "",
     showLinks: false,
+    showGithubLink: false,
   },
 
   {
@@ -338,6 +424,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/figma_clone",
     preview_link: "https://figma-clone-delta.vercel.app/",
     showLinks: true,
+    showGithubLink: true,
   },
 
   {
@@ -365,6 +452,7 @@ const projects = [
       "https://github.com/ahmedsalah117/admin-dashboard/tree/master",
     preview_link: "https://ahmedsalah117.github.io/admin-dashboard/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "Link Sharing App",
@@ -390,6 +478,7 @@ const projects = [
       "https://github.com/ahmedsalah117/link_sharing_app/tree/master",
     preview_link: "https://link-sharing-app-three-sigma.vercel.app/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "The Movies App",
@@ -422,6 +511,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/The-movies-app",
     preview_link: "https://ahmedsalah117.github.io/The-movies-app/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "Game Over",
@@ -476,6 +566,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/Mapty-app",
     preview_link: "https://ahmedsalah117.github.io/Mapty-app/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "Food Order App",
@@ -500,6 +591,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/food-order-application",
     preview_link: "https://ahmedsalah117.github.io/food-order-application/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "Forkify",
@@ -525,6 +617,7 @@ const projects = [
     preview_link:
       "https://6483915c30c84a1898e3cfe9--forkify-ahmed-bahnasy.netlify.app/",
     showLinks: true,
+    showGithubLink: true,
   },
 
   {
@@ -551,6 +644,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/bankist-advanced",
     preview_link: "https://ahmedsalah117.github.io/bankist-advanced/",
     showLinks: true,
+    showGithubLink: true,
   },
 
   {
@@ -577,6 +671,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/Bankist-app",
     preview_link: "https://ahmedsalah117.github.io/Bankist-app/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "Expenses Calculator",
@@ -601,6 +696,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/Expenses-Tracker",
     preview_link: "https://ahmedsalah117.github.io/Expenses-Tracker/",
     showLinks: true,
+    showGithubLink: true,
   },
   {
     name: "CRUD Table",
@@ -628,6 +724,7 @@ const projects = [
     source_code_link: "https://github.com/ahmedsalah117/CRUD-System",
     preview_link: "https://ahmedsalah117.github.io/CRUD-System/",
     showLinks: true,
+    showGithubLink: true,
   },
 ];
 
