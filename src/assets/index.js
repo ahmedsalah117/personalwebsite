@@ -52,7 +52,9 @@ import OpportunitiesControl from "./opportunities_control.png";
 import LeadsBulkAction from "./leads_bulk_action.webp";
 import EmployeeExperience from "./employee_experience.png";
 import CFR from "./CFR.png";
+import Prepwise from "./prepwise_interview.png";
 export {
+  Prepwise,
   EmployeeExperience,
   CFR,
   OpportunitiesControl,

@@ -49,6 +49,7 @@ import {
   LeadsBulkAction,
   EmployeeExperience,
   CFR,
+  Prepwise,
 } from "../assets";
 
 export const navLinks = [
@@ -248,10 +249,13 @@ const experiences = [
 ];
 
 const projects = [
+  // Prepwise
   {
-    name: "iCloud-Ready CRM",
+    name: "Prepwise",
     description: [
-      `• iCloud-Ready CRM is a cutting-edge platform tailored for real estate professionals to enhance efficiency, improve lead management, and drive sales growth`,
+      `• Prepwise is an AI-powered mock interview platform that helps Tech job seekers practice and master their interview skills through real-time AI-driven conversations`,
+      `• Provides comprehensive feedback analysis across communication skills, technical knowledge, problem-solving, and cultural fit`,
+      `• Built with cutting-edge voice AI technology for natural, interactive interview experiences`,
     ],
     tags: [
       {
@@ -263,17 +267,30 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Ant Design",
+        name: "Shadcn UI",
         color: "pink-text-gradient",
       },
+      {
+        name: "Firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "FireStore Database",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vapi AI",
+        color: "green-text-gradient",
+      },
     ],
-    image: OpportunitiesControl,
-    source_code_link: "",
-    preview_link: "https://www.icloud-ready.com/real-estate-crm",
+    image: Prepwise,
+    source_code_link: "https://github.com/ahmedsalah117/mock-interviews",
+    preview_link: "https://mock-interviews-five.vercel.app/",
     showLinks: true,
-    showGithubLink: false,
+    showGithubLink: true,
     showPreviewLink: true,
   },
+  // IlpApps OKR
   {
     name: "IlpApps OKR",
     description: [
@@ -301,6 +318,34 @@ const projects = [
     showGithubLink: false,
     showPreviewLink: true,
   },
+  //iCloud-Ready CRM
+  {
+    name: "iCloud-Ready CRM",
+    description: [
+      `• iCloud-Ready CRM is a cutting-edge platform tailored for real estate professionals to enhance efficiency, improve lead management, and drive sales growth`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: OpportunitiesControl,
+    source_code_link: "",
+    preview_link: "https://www.icloud-ready.com/real-estate-crm",
+    showLinks: true,
+    showGithubLink: false,
+    showPreviewLink: true,
+  },
+
   {
     name: "Shippingify Admin",
     description: [
