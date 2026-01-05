@@ -54,7 +54,15 @@ import EmployeeExperience from "./employee_experience.png";
 import CFR from "./CFR.png";
 import Prepwise from "./prepwise_interview.png";
 import WeCodeForYou from "./company/we_code_for_you_logo.jpeg";
+import CashMeOut from "./cmo_project.png";
+import Ecora from "./ecora_project.png";
+import EgyTrans from "./egytrans_project.png";
+import StarsGroup from "./stars_group_cms.png";
 export {
+  CashMeOut,
+  Ecora,
+  EgyTrans,
+  StarsGroup,
   WeCodeForYou,
   Prepwise,
   EmployeeExperience,

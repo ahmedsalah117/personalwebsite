@@ -51,6 +51,10 @@ import {
   CFR,
   Prepwise,
   WeCodeForYou,
+  CashMeOut,
+  Ecora,
+  EgyTrans,
+  StarsGroup,
 } from "../assets";
 
 export const navLinks = [
@@ -262,6 +266,135 @@ const experiences = [
 ];
 
 const projects = [
+  // Cash Me Out
+  {
+    name: "Cash Me Out",
+    description: [
+      `• The "Cash Me Out (CMO)" platform is a digital supply chain finance (SCF) and investment marketplace that enables large corporate buyers (partners) to pay their suppliers early through funds raised from a diversified pool of investors.`,
+      `• The platform provides a seamless workflow for agreement management, supplier onboarding, investor funding, and repayment cycles.`,
+      `• CMO’s objective is to bridge liquidity needs in the supply chain ecosystem, particularly in Saudi Arabia, through a compliant and scalable financial technology solution.`,
+    ],
+    tags: [
+      {
+        name: "React Router 7",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: CashMeOut,
+    showLinks: false,
+    showGithubLink: false,
+    showPreviewLink: false,
+  },
+  // Ecora
+  {
+    name: "Ecora",
+    description: [
+      `•  A scalable SaaS platform designed for end-to-end workforce management, enabling automated provisioning, subscription handling, and administrative setup.`,
+      `• A highly adaptable management system featuring a dynamic form engine and flexible organizational hierarchies (branches, departments, and custom units) that evolve with business needs.`,
+      `• An integrated HR solution providing comprehensive white-labelling capabilities, robust batch-processing for employee data, and advanced analytical filtering for managing large, complex datasets`,
+    ],
+    tags: [
+      {
+        name: "React Router 7",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Ecora,
+    showLinks: false,
+    showGithubLink: false,
+    showPreviewLink: false,
+  },
+  // StarsGroup CMS
+  {
+    name: "StarsGroup CMS",
+    description: [
+      `• Centralized Mobile CMS: An administrative platform for managing and synchronizing all dynamic content of a consumer-facing mobile application, including users, notifications, brands, banners, legal pages, and app settings.`,
+      `• Delivers powerful admin tools such as searchable tables, advanced filtering, scheduled and real-time notifications, user management, and Excel exports to support monitoring and data-driven decisions.`,
+      `• Enables non-technical administrators to manage policies, contact information, promotions, brand catalogs, and user feedback features.`,
+    ],
+    tags: [
+      {
+        name: "React Router 7",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: StarsGroup,
+    showLinks: false,
+    showGithubLink: false,
+    showPreviewLink: false,
+  },
+  // EgyTrans
+  {
+    name: "EgyTrans",
+    description: [
+      `• Contributed to the development of multiple corporate websites for Egytrans, a leading heavy transportation and logistics company, delivering a consistent and professional digital presence.`,
+      `• CMS-Integrated Page Development: Implemented core website sections—including Home, About Us, Contact Us, News, and Projects—fully integrated with Strapi as a headless CMS to enable content management by non-technical teams.`,
+      `• Modern Front-End Delivery: Focused on responsive, maintainable solutions that seamlessly consume CMS-driven content, ensuring usability, and performance.`,
+    ],
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Router 7",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "React JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: EgyTrans,
+    showLinks: false,
+    showGithubLink: false,
+    showPreviewLink: false,
+  },
+
   // Prepwise
   {
     name: "Prepwise",
