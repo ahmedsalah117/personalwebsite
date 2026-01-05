@@ -53,7 +53,9 @@ import LeadsBulkAction from "./leads_bulk_action.webp";
 import EmployeeExperience from "./employee_experience.png";
 import CFR from "./CFR.png";
 import Prepwise from "./prepwise_interview.png";
+import WeCodeForYou from "./company/we_code_for_you_logo.jpeg";
 export {
+  WeCodeForYou,
   Prepwise,
   EmployeeExperience,
   CFR,

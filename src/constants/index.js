@@ -50,6 +50,7 @@ import {
   EmployeeExperience,
   CFR,
   Prepwise,
+  WeCodeForYou,
 } from "../assets";
 
 export const navLinks = [
@@ -157,10 +158,22 @@ const technologies = [
 const experiences = [
   {
     title: "Front-End Engineer",
+    company_name: "WeCodeForYou.io",
+    icon: WeCodeForYou,
+    iconBg: "#383E56",
+    date: "Oct 2025 - Present",
+    points: [
+      "Developed the Front-end of an Admin CMS software for Stars Group Fashion Retail Company. Built with React Router 7.",
+      "Collaborated with my peer Developers & Designers on building 4 websites for the leading Heavy Transportation and Logistics company, EgyTrans.",
+      "Contributed to the development of a Fintech Software that operates in Saudi Arabia.",
+    ],
+  },
+  {
+    title: "Front-End Engineer",
     company_name: "iCloud-Ready",
     icon: ICloudReady,
     iconBg: "#383E56",
-    date: "Sept 2024 - Present",
+    date: "Sept 2024 - Oct 2025",
     points: [
       "Developing and maintaining web applications using React, Next.js, and Gatsby.",
       "Playing a key role in supporting & developing the iCloud-Ready CRM & iLpApps productivity app.",
